@@ -1,0 +1,15 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+<h1>Наши партнёры</h1>
+
+<div class="partner-list">
+    {% for partner in partners %}
+    <a href="/partners/{{ partner.id }}" class="partner-item">
+        <h4>{{ partner.name }}</h4>
+        <p><strong>Компания: </strong>{{ partner.company }}</p>
+        <p><strong>О себе: </strong>{{ partner.desc|length > 150 ? partner.desc|slice(0, 150)|trim ~ '...' : partner.desc }}</p>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

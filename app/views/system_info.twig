@@ -1,0 +1,8 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+<h1>Информация о системе</h1>
+<div class="phpinfo">
+    {{ phpinfoContent|raw }}
+</div>
+{% endblock %}

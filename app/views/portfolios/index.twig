@@ -1,0 +1,15 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+<h1>Наши портфолио</h1>
+
+<div class="portfolio-list">
+    {% for portfolio in portfolios %}
+    <a href="/portfolios/{{ portfolio.id }}" class="portfolio-item">
+        <h4>{{ portfolio.name }}</h4>
+        <p><strong>Сайт: </strong>{{ portfolio.site }}</p>
+        <p><strong>Описание: </strong>{{ portfolio.desc }}</p>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

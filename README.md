@@ -1,5 +1,10 @@
 # Итоговое задание 49.6.1 (HW-04)
 
+## Использованное ПО:
+* Windows 10 Pro
+* Связка [VSCode](https://code.visualstudio.com/download) + [XAMPP](https://www.apachefriends.org/)
+* Шаблонизатор [Twig](https://twig.symfony.com/)
+
 ## Список задач
 * Воспроизведите MVC-архитектуру согласно полученным знаниям, на примере сайта визитки
 * Подключите пакет php-gd, прикрепить скрин о его подключении (phpinfo)
@@ -10,8 +15,3 @@
 * Задание 2: Подключён пакет php-gd
 ![Установленный php-gd](screenshots/php-gd.png)
 * Задание 3: Реализовано несколько статических страниц (О нас, Контакты), а также 2 страницы, которые выводят данные (Портфолио, Партнеры)
-
-## Использованное ПО:
-* Windows 10 Pro
-* Связка [VSCode](https://code.visualstudio.com/download) + [XAMPP](https://www.apachefriends.org/)
-* Шаблонизатор [Twig](https://twig.symfony.com/)

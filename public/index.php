@@ -41,9 +41,9 @@ switch ($uri) {
         (new PortfolioController($twig))->show($matches[1]);
         break;
 
-    case 'system_info':
+    /* case 'system_info':
         (new SystemInfoController())->index($twig);
-        break;
+        break; */
     default:
         http_response_code(404);
         echo $twig->render('errors/404.twig', ['title' => '404 | Страница не найдена']);
